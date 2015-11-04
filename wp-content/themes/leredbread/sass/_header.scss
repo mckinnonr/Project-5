@@ -1,0 +1,58 @@
+*{
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.site-header {
+  width: 100%;
+  background-color: #fafafa;
+  .site-branding {
+    // display: inline-block;
+    margin: 1.5rem auto;
+    padding: 1.25rem;
+    border: 1px solid grey;
+    width: 1024px;
+    height: 6rem;
+    .logo {
+      width: 300px;
+      height: auto;
+      display: inline-block;
+      float: left;
+    }
+    .social {
+      display: inline-block;
+      float: right;
+      overflow: hidden;
+      color: grey;
+      i {
+        margin: 15px;
+      }
+    }
+  }
+}
+
+.main-navigation {
+
+}
+.hero {
+  background: url('../../images/hero-bread.jpg') no-repeat;
+  text-align: center;
+  width: 1001px;
+  height: 550px;
+  margin: auto;
+}
+.hero-text {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'overlock-web',serif;
+  font-size: 6rem;
+  line-height: 1;
+  margin: 0;
+  text-shadow: 2px 1px 2px rgba(100,100,100,.75);
+}
+header {
+  // height: 550px;
+}

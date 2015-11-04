@@ -1,0 +1,17 @@
+.site-footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  .contact {
+    display: flex;
+    flex-direction: row;
+  }
+  img {
+    width: 250px;
+    height: 52px;
+  }
+  .business-hours {
+
+  }
+}

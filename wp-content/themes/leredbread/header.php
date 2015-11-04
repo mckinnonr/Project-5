@@ -22,8 +22,20 @@
 
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+					<div class="site-branding-inner container">
+						<div class="logo">
+							<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+							<a href="index.php" rel="home">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/lrb-logo.svg" />
+							</a>
+						</div>
+						<div class="social">
+							<i class="fa fa-facebook"></i>
+							<i class="fa fa-twitter"></i>
+							<i class="fa fa-google-plus"></i>
+							<i class="fa fa-envelope"></i>
+						</div>
+					</div><!-- .site-branding-inner container -->
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
@@ -31,5 +43,3 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
-
-			<div id="content" class="site-content">

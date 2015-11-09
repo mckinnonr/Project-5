@@ -1,7 +1,7 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: Le Red Bread Bakery
 Theme URI: http://underscores.me/
-Author: RED Academy
+Author: Ross McKinnon
 Author URI: http://www.redacademy.com
 Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
@@ -712,23 +712,111 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+* {
+  font-family: 'open_sans', sans-serif; }
+
+h1, h2 {
+  font-family: 'overlock-web', sans-serif;
+  text-transform: uppercase; }
+
+h3 {
+  font-family: 'overlock-web', sans-serif; }
+
 /* Front page */
+.product-type {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1024px;
+  margin: 0 auto;
+  padding: 0; }
+  .product-type .product {
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1.5rem .5rem;
+    list-style-type: none; }
+    .product-type .product h3 {
+      text-align: center;
+      text-transform: uppercase; }
+    .product-type .product a {
+      color: red; }
+    .product-type .product a:hover {
+      color: black; }
+
+.our-products {
+  width: 1024px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  border: 1px solid #e1e1e1;
+  padding: 1.5rem;
+  background-color: #fafafa; }
+  .our-products span {
+    margin: 0 1.5rem; }
+  .our-products button {
+    float: right;
+    margin: 0 1.5rem;
+    height: 2rem;
+    overflow: hidden;
+    background-color: #400c0d;
+    color: #fff;
+    font-family: 'open_sans';
+    box-shadow: none; }
+
+.news-container {
+  border: 1px 0px solid #e1e1e1;
+  margin: 1.5rem auto;
+  background-color: #fafafa; }
+  .news-container h2 {
+    max-width: 25%;
+    text-align: center;
+    margin: 1.5rem auto;
+    padding: .5rem;
+    border-bottom: 1px solid #e1e1e1; }
+  .news-container .news {
+    width: 1024px;
+    margin: 3rem auto;
+    padding: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    list-style-type: none; }
+    .news-container .news .news-item {
+      max-width: 256px;
+      border: 1px solid #e1e1e1; }
+      .news-container .news .news-item img {
+        height: 200px;
+        overflow: hidden; }
+      .news-container .news .news-item a {
+        font-family: 'overlock-web';
+        font-weight: bold;
+        color: grey;
+        font-size: 1.25rem;
+        text-decoration: none; }
+      .news-container .news .news-item h3 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+      .news-container .news .news-item a:hover {
+        color: red; }
+
 * {
   box-sizing: border-box; }
 
-.clearfix:after {
-  content: '';
-  display: table;
-  clear: both; }
-
 .site-header {
-  width: 100%;
-  background-color: #fafafa; }
-  .site-header .site-branding {
-    margin: 1.5rem auto;
-    padding: 1.25rem;
-    border: 1px solid grey;
+  overflow: hidden;
+  border: 1px 0px solid #e1e1e1; }
+  .site-header .wrapper {
     width: 1024px;
+    margin: 0 auto; }
+  .site-header .site-branding {
+    margin-top: 1.5rem;
+    padding: 1.25rem;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
     height: 6rem; }
     .site-header .site-branding .logo {
       width: 300px;
@@ -742,39 +830,100 @@ object {
       color: grey; }
       .site-header .site-branding .social i {
         margin: 15px; }
+  .site-header .main-navigation {
+    background-color: #fff;
+    float: none; }
+    .site-header .main-navigation .menu {
+      float: left;
+      overflow: hidden; }
+    .site-header .main-navigation ul {
+      float: left;
+      overflow: hidden; }
+    .site-header .main-navigation li {
+      padding: .75rem 1.5rem;
+      color: grey;
+      display: block;
+      font-weight: 700;
+      text-decoration: none;
+      background-color: transparent;
+      border: 1px solid #e1e1e1; }
+    .site-header .main-navigation .current_page_item {
+      border-bottom: 5px solid red; }
+    .site-header .main-navigation fieldset {
+      border: none; }
+    .site-header .main-navigation .search-field, .site-header .main-navigation .search-submit {
+      border: none;
+      background-color: transparent; }
+    .site-header .main-navigation .search-form {
+      float: right;
+      overflow: hidden; }
 
 .hero {
   background: url("../../images/hero-bread.jpg") no-repeat;
+  background-size: cover;
   text-align: center;
-  width: 1001px;
   height: 550px;
-  margin: auto; }
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 .hero-text {
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin: auto;
   text-transform: uppercase;
   color: #fff;
-  font-family: 'overlock-web',serif;
+  font-family: 'overlock-web';
   font-size: 6rem;
   line-height: 1;
-  margin: 0;
   text-shadow: 2px 1px 2px rgba(100, 100, 100, 0.75); }
 
+.footer {
+  background-color: #222;
+  width: 100%; }
+
 .site-footer {
-  background-color: black;
+  width: 1024px;
+  margin: 0 auto;
   color: white;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden; }
+  .site-footer h3 {
+    text-transform: uppercase; }
   .site-footer .contact {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-  .site-footer img {
-    width: 250px;
-    height: 52px; }
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 11rem; }
+    .site-footer .contact .social {
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin: 0 5px; }
+  .site-footer .logo {
+    margin: 5rem auto; }
+    .site-footer .logo img {
+      width: 250px;
+      height: 52px; }
+
+.site-info {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding-top: 1px;
+  height: 3rem; }

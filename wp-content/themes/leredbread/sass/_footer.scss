@@ -1,17 +1,42 @@
+.footer {
+  background-color: #222;
+  width: 100%;
+}
 .site-footer {
-  background-color: black;
+  width: 1024px;
+  margin: 0 auto;
   color: white;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  h3 {
+    text-transform: uppercase;
+  }
   .contact {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 11rem;
+    .social {
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 5px;
+    }
   }
-  img {
-    width: 250px;
-    height: 52px;
+  .logo {
+    margin: 5rem auto;
+    img {
+      width: 250px;
+      height: 52px;
+    }
   }
-  .business-hours {
-
-  }
+  // .business-hours {
+  // }
+}
+.site-info {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding-top: 1px;
+  height: 3rem;
 }

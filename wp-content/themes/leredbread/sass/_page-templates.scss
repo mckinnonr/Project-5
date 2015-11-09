@@ -2,4 +2,105 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+// Fonts
+* {
+  font-family: 'open_sans', sans-serif;
+  // color: #222222;
+}
+h1, h2, {
+  font-family: 'overlock-web', sans-serif;
+  text-transform: uppercase;
+}
+h3 {
+  font-family: 'overlock-web', sans-serif;
+}
+
+
 /* Front page */
+.product-type {
+  display: flex;
+  width: 1024px;
+  margin: 0 auto;
+  padding: 0;
+  .product {
+    justify-content: space-between;
+    padding: 1.5rem .5rem;
+    list-style-type: none;
+    h3 {
+      text-align: center;
+      text-transform: uppercase;
+    }
+    a {
+      color: red;
+    }
+    a:hover {
+      color: black;
+    }
+  }
+}
+.our-products {
+  width: 1024px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  border: 1px solid #e1e1e1;
+  padding: 1.5rem;
+  background-color: #fafafa;
+  span {
+    margin: 0 1.5rem;
+  }
+  button {
+    float: right;
+    margin: 0 1.5rem;
+    height: 2rem;
+    overflow: hidden;
+    background-color: #400c0d;
+    color: #fff;
+    font-family: 'open_sans';
+    box-shadow: none;
+  }
+}
+
+// Front Page News
+.news-container {
+  border: 1px 0px solid #e1e1e1;
+  margin: 1.5rem auto;
+  background-color: #fafafa;
+  h2 {
+    max-width: 25%;
+    text-align: center;
+    margin: 1.5rem auto;
+    padding: .5rem;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .news {
+    width: 1024px;
+    margin: 3rem auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    .news-item {
+      max-width: 256px;
+      border: 1px solid #e1e1e1;
+      img {
+        height: 200px;
+        overflow: hidden;
+      }
+      a {
+        font-family: 'overlock-web';
+        font-weight: bold;
+        color: grey;
+        font-size: 1.25rem;
+        text-decoration: none;
+      }
+      h3 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      a:hover {
+        color: red;
+      }
+    }
+  }
+}

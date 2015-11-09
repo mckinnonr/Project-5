@@ -1,20 +1,20 @@
 *{
   box-sizing: border-box;
 }
-.clearfix:after {
-  content: '';
-  display: table;
-  clear: both;
-}
+
 .site-header {
-  width: 100%;
-  background-color: #fafafa;
-  .site-branding {
-    // display: inline-block;
-    margin: 1.5rem auto;
-    padding: 1.25rem;
-    border: 1px solid grey;
+  overflow: hidden;
+  // border-top: 1px solid #e1e1e1;
+  border: 1px 0px solid #e1e1e1;
+  .wrapper {
     width: 1024px;
+    margin: 0 auto;
+  }
+  .site-branding {
+    margin-top: 1.5rem;
+    padding: 1.25rem;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
     height: 6rem;
     .logo {
       width: 300px;
@@ -32,27 +32,57 @@
       }
     }
   }
-}
-
-.main-navigation {
-
+  .main-navigation {
+    background-color: #fff;
+    float: none;
+    .menu {
+      float: left;
+      overflow: hidden;
+    }
+    ul {
+      float: left;
+      overflow: hidden;
+    }
+    li {
+      padding: .75rem 1.5rem;
+      color: grey;
+      display: block;
+      font-weight: 700;
+      text-decoration: none;
+      background-color: transparent;
+      border: 1px solid #e1e1e1;
+    }
+    .current_page_item {
+      border-bottom: 5px solid red;
+    }
+    fieldset {
+      border: none;
+    }
+    .search-field, .search-submit {
+      border: none;
+      background-color: transparent;
+    }
+    .search-form {
+      float: right;
+      overflow: hidden;
+      // border: none
+    }
+  }
 }
 .hero {
   background: url('../../images/hero-bread.jpg') no-repeat;
+  background-size: cover;
   text-align: center;
-  width: 1001px;
   height: 550px;
-  margin: auto;
+  display: flex;
 }
 .hero-text {
+  justify-content: space-around;
+  margin: auto;
   text-transform: uppercase;
   color: #fff;
-  font-family: 'overlock-web',serif;
+  font-family: 'overlock-web';
   font-size: 6rem;
   line-height: 1;
-  margin: 0;
   text-shadow: 2px 1px 2px rgba(100,100,100,.75);
-}
-header {
-  // height: 550px;
 }
